@@ -9,26 +9,11 @@
       <div class="container">
         <br />
         <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col" v-for="(index, item) in productList">
+          <div class="col" v-for="item in productList">
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">{{ index }}</h5>
-                <p class="card-text">{{ item }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <hr>
-        <br />
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col" v-for="(index, item) in productList01">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">index : {{ index }} - key : {{ item.name }}</h5>
-                <p class="card-text">{{item.age}}</p>
+                <h5 class="card-title">{{ item }}</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
             </div>
           </div>
@@ -56,14 +41,7 @@ export default {
   },
   data() {
     return {
-      productList: ["aaa", "bbb", "ccc", "ddd"],
-      productList01:[
-        {name: 'John', age: 24},
-        {name: 'John01', age: 241},
-        {name: 'John02', age: 242},
-        {name: 'John03', age: 243},
-
-      ]
+      productList: ["aaa", "bbb", "ccc", "ddd", "eee"]
     }
   }
 }
