@@ -1,6 +1,8 @@
 <template>
     <nav class="navbar">
-        <div class="logo">MySite</div>
+        <div class="logo">
+          <a href="/" style="text-decoration: none; color: #ffffff;">iJournygo</a>
+        </div>
         <button class="menu-toggle" @click="toggleMenu">
             <span v-if="!menuOpen">☰</span>
             <span v-else>✖</span>
@@ -9,7 +11,8 @@
             <li><router-link to="/" active-class="active-link">Home</router-link></li>
             <li><router-link to="/contact" active-class="active-link">Contact</router-link></li>
             <li><router-link to="/services" active-class="active-link">Services</router-link></li>
-            <li><router-link to="/Contact" active-class="active-link">Contact</router-link></li>
+            <li><router-link to="/Importmodule01" active-class="active-link">Module01</router-link></li>
+            <li><router-link to="/Importmodule02" active-class="active-link">Module02</router-link></li>
             <li><router-link to="/about" active-class="active-link">About</router-link></li>
         </ul>
     </nav>
